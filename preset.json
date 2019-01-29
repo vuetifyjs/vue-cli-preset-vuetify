@@ -6,10 +6,7 @@
       "config": "standard",
       "lintOn": [
         "save"
-      ],
-      "eslintConfig": {
-        "extends": "vuetify"
-      }
+      ]
     },
     "@vue/cli-plugin-unit-jest": {},
     "@vue/cli-plugin-e2e-cypress": {},
