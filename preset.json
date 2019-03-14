@@ -21,7 +21,8 @@
       "usePolyfill": true,
       "locale": "en"
     },
-    "vue-cli-plugin-eslint-config-vuetify": {}
+    "vue-cli-plugin-eslint-config-vuetify": {},
+    "vue-cli-plugin-vuetify-essentials": {}
   },
   "router": true,
   "routerHistoryMode": true,
