@@ -8,6 +8,6 @@
   },
   "github": {
     "release": true,
-    "releaseName": "${version}"
+    "releaseName": "v${version}"
   }
 }
