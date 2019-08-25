@@ -28,7 +28,7 @@
   "router": true,
   "routerHistoryMode": true,
   "vuex": true,
-  "cssPreprocessor": "sass",
+  "cssPreprocessor": "dart-sass",
   "configs": {
     "vue": {
       "devServer": {
