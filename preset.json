@@ -14,7 +14,7 @@
     "vue-cli-plugin-vuetify": {
       "preset": "configure",
       "replaceComponents": false,
-      "useTheme": true,
+      "useTheme": false,
       "useCustomProperties": false,
       "iconFont": "mdi",
       "installFonts": false,
@@ -33,6 +33,14 @@
     "vue": {
       "devServer": {
         "disableHostCheck": true
+      },
+      "transpileDependencies": ["vuetify"],
+      "css": {
+        "loaderOptions": {
+          "sass": {
+            "data": "@import \"~@/sass/main.scss\""
+          }
+        }
       }
     }
   }
