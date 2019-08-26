@@ -24,14 +24,6 @@
     },
     "vue-cli-plugin-eslint-config-vuetify": {},
     "vue-cli-plugin-vuetify-essentials": {},
-    "vue-cli-plugin-meta": {
-      "projectName": "Vuetify",
-      "url": "",
-      "description": "An Opinionated Pre-configured Vuetify application",
-      "twitterHandle": "vuetifyjs",
-      "socialImage": "https://cdn.vuetifyjs.com/images/logos/vuetify-logo-300.png",
-      "googleAnalytics": ""
-    },
     "vue-cli-plugin-i18n": {
       "locale": "en",
       "fallbackLocale": "en",
