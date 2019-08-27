@@ -22,7 +22,7 @@ Adds **base** and **core** components.
 
 ### 🔌 Plugins
 - [vue-eslint](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint)
-  - [eslint-plugin-vuetify](https://github.com/vuetifyjs/eslint-plugin-vuetify)
+  - [eslint-config-vuetify](https://github.com/vuetifyjs/eslint-config-vuetify)
 - [vue-jest](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest)
 - [vue-cypress](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-cypress)
 - [vue-router](https://github.com/vuejs/vue-router)
