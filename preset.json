@@ -5,9 +5,7 @@
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
       "config": "standard",
-      "lintOn": [
-        "save"
-      ]
+      "lintOn": ["save"]
     },
     "@vue/cli-plugin-unit-jest": {},
     "@vue/cli-plugin-e2e-cypress": {},
@@ -23,12 +21,7 @@
       "locale": "en"
     },
     "vue-cli-plugin-vuetify-essentials": {},
-    "vue-cli-plugin-i18n": {
-      "locale": "en",
-      "fallbackLocale": "en",
-      "localeDir": "locales",
-      "enableInSFC": false
-    }
+    "vue-cli-plugin-vuetify-cli": {}
   },
   "router": true,
   "routerHistoryMode": true,
@@ -38,14 +31,6 @@
     "vue": {
       "devServer": {
         "disableHostCheck": true
-      },
-      "transpileDependencies": ["vuetify"],
-      "css": {
-        "loaderOptions": {
-          "sass": {
-            "data": "@import \"~@/sass/main.scss\""
-          }
-        }
       }
     }
   }
