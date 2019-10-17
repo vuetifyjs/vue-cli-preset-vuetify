@@ -1,26 +1,27 @@
-# Vuetify Vue CLI 3 Preset
+# vue-cli-preset-vuetify
+> A Vue CLI 3 Preset for generating scaffolded Vuetify applications
 
-Extremely opinionated pre-configured Vuetify application. Includes the following features:
-
-### 🎉 Installation
+### 💿 Install
 
 ```bash
 vue create my-project --preset vuetifyjs/vue-cli-preset-vuetify
 ```
 
-### 🏨 Default Component Structure
+### 🚀 Usage
+
+#### Default Component Structure
 Adds **base** and **core** components.
 
 - **base**: Global components that are automatically loaded
 - **core**: Application level components
 
-### 🚀 Vuetify
-- Configured default IE11/Safari/Edge support. 
+#### Vuetify
+- Configured default IE11/Safari/Edge support.
 - Setup to use [vue-i18n](https://github.com/kazupon/vue-i18n)
-- Setup to use [SASS Variables](https://vuetifyjs.com/en/customization/sass-variables)
+- Setup to use [SASS Variables](https://vuetifyjs.com/customization/sass-variables)
 - Setup to use [Material Design Icons SVG](https://github.com/Templarian/MaterialDesign-JS)
 
-### 🔌 Plugins
+#### Plugins
 - [vue-eslint](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint)
   - [eslint-config-vuetify](https://github.com/vuetifyjs/eslint-config-vuetify)
 - [vue-jest](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest)
@@ -30,6 +31,8 @@ Adds **base** and **core** components.
 - [vuex](https://github.com/vuejs/vuex)
   - Preconfigured modules
   - [vuex-pathify](https://github.com/davestewart/vuex-pathify)
+- [vue-cli-plugin-vuetify-cli](https://github.com/vuetifyjs/vue-cli-plugin-vuetify-cli)
+- [vue-cli-plugin-vuetify-storybook](https://github.com/vuetifyjs/vue-cli-plugin-vuetify-storybook)
 - [vuex-router-sync](https://github.com/vuejs/vuex-router-sync)
 - [vue-meta](https://github.com/nuxt/vue-meta)
 - [vue-analytics](https://github.com/MatteoGabriele/vue-analytics)
