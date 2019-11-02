@@ -7,6 +7,10 @@
       "config": "standard",
       "lintOn": ["save"]
     },
+    "@vue/cli-plugin-router": {
+      "historyMode": true
+    },
+    "@vue/cli-plugin-vuex": {},
     "@vue/cli-plugin-unit-jest": {},
     "@vue/cli-plugin-e2e-cypress": {},
     "vue-cli-plugin-vuetify": {
@@ -14,18 +18,17 @@
       "replaceComponents": false,
       "useTheme": false,
       "useCustomProperties": false,
-      "iconFont": "mdi",
+      "iconFont": "mdiSvg",
       "installFonts": false,
       "useAlaCarte": true,
       "usePolyfill": true,
       "locale": "en"
     },
-    "vue-cli-plugin-vuetify-essentials": {},
-    "vue-cli-plugin-vuetify-cli": {}
+    "vue-cli-plugin-vuetify-storybook": {},
+    "vue-cli-plugin-vuetify-cli": {},
+    "vue-cli-plugin-prerender-spa": { "renderRoutes": "/" },
+    "vue-cli-plugin-vuetify-essentials": {}
   },
-  "router": true,
-  "routerHistoryMode": true,
-  "vuex": true,
   "cssPreprocessor": "dart-sass",
   "configs": {
     "vue": {
