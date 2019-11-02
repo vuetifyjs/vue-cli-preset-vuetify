@@ -18,7 +18,7 @@
       "replaceComponents": false,
       "useTheme": false,
       "useCustomProperties": false,
-      "iconFont": "mdiSvg",
+      "iconFont": "mdi",
       "installFonts": false,
       "useAlaCarte": true,
       "usePolyfill": true,
