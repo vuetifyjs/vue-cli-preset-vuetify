@@ -11,8 +11,6 @@
       "historyMode": true
     },
     "@vue/cli-plugin-vuex": {},
-    "@vue/cli-plugin-unit-jest": {},
-    "@vue/cli-plugin-e2e-cypress": {},
     "vue-cli-plugin-vuetify": {
       "preset": "configure",
       "replaceComponents": false,
@@ -23,11 +21,7 @@
       "useAlaCarte": true,
       "usePolyfill": true,
       "locale": "en"
-    },
-    "vue-cli-plugin-vuetify-storybook": {},
-    "vue-cli-plugin-vuetify-cli": {},
-    "vue-cli-plugin-prerender-spa": { "renderRoutes": ["/"] },
-    "vue-cli-plugin-vuetify-essentials": {}
+    }
   },
   "cssPreprocessor": "dart-sass",
   "configs": {
