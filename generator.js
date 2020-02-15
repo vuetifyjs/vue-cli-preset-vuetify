@@ -1,12 +1,7 @@
 // Utilities
 const { exec } = require('child_process')
 const { upperFirst } = require('lodash')
-const {
-  chalk,
-  log,
-  logWithSpinner,
-  stopSpinner,
-} = require("@vue/cli-shared-utils")
+const chalk = require('chalk')
 
 async function run (api, command) {
   let subprocess
@@ -36,7 +31,7 @@ module.exports = (api, { preset = 'base' }) => {
     const presetName = chalk.blue(`Vuetify ${upperFirst(preset)} Preset`)
     const projectName = chalk.yellow(api.rootOptions.projectName)
 
-    logWithSpinner(`🦈`, `Preparing CLI Preset. This may take a while...`)
+    console.log(`🦈  Preparing CLI Preset. This may take a while...`)
 
     const {
       stderr,
@@ -48,12 +43,9 @@ module.exports = (api, { preset = 'base' }) => {
     }
 
     stdout.on('close', async () => {
-      stopSpinner()
-
       await run(api, './node_modules/.bin/vue-cli-service run lint')
 
-      log(`🍣  Successfully generated ${projectName} from the ${presetName}.`)
-      log()
+      console.log(`🍣  Successfully generated ${projectName} from the ${presetName}.\n`)
     })
   })
 }

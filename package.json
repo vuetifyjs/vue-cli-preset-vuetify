@@ -6,11 +6,7 @@
   "author": "John Leider <john@vuetifyjs.com>",
   "license": "MIT",
   "dependencies": {
-    "@vue/cli-shared-utils": "^4.2.2",
-    "lodash": "^4.17.15"
-  },
-  "peerDependencies": {
-    "@vue/cli-shared-utils": "^4.2.2",
+    "chalk": "^3.0.0",
     "lodash": "^4.17.15"
   }
 }
