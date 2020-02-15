@@ -5,9 +5,8 @@
   "repository": "git@github.com:vuetifyjs/vue-cli-preset-vuetify.git",
   "author": "John Leider <john@vuetifyjs.com>",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@vue/cli-shared-utils": "^4.2.2",
-    "chalk": "^3.0.0",
-    "execa": "^4.0.0"
+    "chalk": "^3.0.0"
   }
 }
