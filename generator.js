@@ -29,16 +29,13 @@ module.exports = (api, { preset = 'base' }) => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
 
-    const {
-      stderr,
-      stdout
-    } = await run(api, `vue add @vuetify/preset-${preset}`)
+    const subprocess = await run(api, `vue add @vuetify/preset-${preset}`)
 
-    if (!stdout) {
-      return console.error(`Unable to add preset ${preset} due to error: ${stderr}`)
+    if (!subprocess) {
+      return console.error(`Unable to add preset ${preset}.`)
     }
 
-    stdout.on('close', async () => {
+    subprocess.stdout.on('close', async () => {
       console.log(`🍣  Successfully generated ${projectName} from the ${presetName}.\n`)
     })
   })
