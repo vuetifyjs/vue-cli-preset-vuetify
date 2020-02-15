@@ -1,7 +1,5 @@
 // Utilities
 const { exec } = require('child_process')
-const { upperFirst } = require('lodash')
-const chalk = require('chalk')
 
 async function run (api, command) {
   let subprocess
@@ -28,10 +26,8 @@ module.exports = (api, { preset = 'base' }) => {
   })
 
   api.onCreateComplete(async () => {
-    const presetName = chalk.blue(`Vuetify ${upperFirst(preset)} Preset`)
-    const projectName = chalk.yellow(api.rootOptions.projectName)
-
-    console.log(`🦈  Preparing CLI Preset. This may take a while...`)
+    const presetName = `Vuetify ${preset} preset`
+    const projectName = api.rootOptions.projectName
 
     const {
       stderr,
@@ -43,8 +39,6 @@ module.exports = (api, { preset = 'base' }) => {
     }
 
     stdout.on('close', async () => {
-      await run(api, './node_modules/.bin/vue-cli-service run lint')
-
       console.log(`🍣  Successfully generated ${projectName} from the ${presetName}.\n`)
     })
   })

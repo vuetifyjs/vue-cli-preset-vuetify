@@ -4,9 +4,5 @@
   "description": "A Vue CLI 3 preset using Vuetify",
   "repository": "git@github.com:vuetifyjs/vue-cli-preset-vuetify.git",
   "author": "John Leider <john@vuetifyjs.com>",
-  "license": "MIT",
-  "dependencies": {
-    "chalk": "^3.0.0",
-    "lodash": "^4.17.15"
-  }
+  "license": "MIT"
 }
