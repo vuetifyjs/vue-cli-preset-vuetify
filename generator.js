@@ -1,8 +1,8 @@
 // Utilities
-const chalk = require('chalk')
 const { exec } = require('child_process')
 const { upperFirst } = require('lodash')
 const {
+  chalk,
   log,
   logWithSpinner,
   stopSpinner,
