@@ -6,7 +6,7 @@ async function run (api, command) {
 
   try {
     subprocess = exec(command, {
-      cwd: api.resolve(),
+      cwd: api.resolve(''),
       env: {
         ...process.env,
         VUE_CLI_SKIP_DIRTY_GIT_PROMPT: true,
