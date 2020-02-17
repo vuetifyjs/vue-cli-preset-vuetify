@@ -18,17 +18,9 @@ async function run (api, command) {
 }
 
 module.exports = (api, { preset = 'base' }) => {
-  // TODO: This should be in the base plugin.
-  // Ran into issue with duplicate extends
-  // and temporarily moved it into here
-  api.extendPackage({
-    'eslintConfig': { 'extends': 'vuetify' },
-  })
-
   api.onCreateComplete(async () => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
-
     const subprocess = await run(api, `vue add @vuetify/preset-${preset}`)
 
     if (!subprocess) {
