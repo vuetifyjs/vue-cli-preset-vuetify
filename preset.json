@@ -10,7 +10,6 @@
     "@vue/cli-plugin-router": {
       "historyMode": true
     },
-    "@vue/cli-plugin-vuex": {},
     "vue-cli-plugin-vuetify": {
       "preset": "configure",
       "replaceComponents": false,
