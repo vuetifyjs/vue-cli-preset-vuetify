@@ -13,8 +13,6 @@ Select a desired preset:
 Preset options:
 ? The desired Vue CLI Preset (Use arrow keys)
 > Base (Basic scaffold)
-  - Essential (Integrated CLI w/ unit testing) (Disabled)
-  - Recommended (Integrated Storybook) (Disabled)
 ```
 
 ### 💪 Supporting Vuetify
@@ -36,11 +34,11 @@ Preset options:
     <a href="https://paypal.me/vuetify">Make a one-time payment with Paypal</a>
   </li>
   <li>
-    <a href="https://vuetifyjs.com/getting-started/consulting-and-support?ref=github">Book time with John</a>
+    <a href="https://vuetifyjs.com/getting-started/consulting-and-support?ref=github">Book time with the Team</a>
   </li>
 </ul>
 
 ### 📑 License
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2016-present Vuetify LLC
+Copyright (c) 2016-present Vuetify, LLC

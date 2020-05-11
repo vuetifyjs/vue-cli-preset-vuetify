@@ -11,7 +11,7 @@ async function run (api, command) {
         ...process.env,
         VUE_CLI_SKIP_DIRTY_GIT_PROMPT: true,
       }
-    }, (err, stdout, stderr) => Promise.resolve({ stderr: err }))
+    }, stderr => Promise.resolve({ stderr }))
   } catch (e) { /* */ }
 
   return subprocess
@@ -21,7 +21,13 @@ module.exports = (api, { preset = 'base' }) => {
   api.onCreateComplete(async () => {
     const presetName = `Vuetify ${preset} preset`
     const projectName = api.rootOptions.projectName
-    const subprocess = await run(api, `vue add @vuetify/preset-${preset}`)
+    let subprocess
+
+    try {
+      subprocess = await run(api, `vue add @vuetify/preset-${preset}`)
+    } catch (err) {
+      console.warn(err)
+    }
 
     if (!subprocess) {
       return console.error(`Unable to add preset ${preset}.`)

@@ -2,21 +2,11 @@ module.exports = [
   {
     type: 'list',
     name: 'preset',
-    message: 'The desired Vue CLI Preset',
+    message: 'Select from one of the following presets to scaffold your Vue project:',
     choices: [
       {
-        name: 'Base (Basic scaffold)',
+        name: 'Base (A basic Vuetify application)',
         value: 'base'
-      },
-      {
-        disabled: true,
-        name: 'Essential (Integrated CLI w/ unit testing)',
-        value: 'essential'
-      },
-      {
-        disabled: true,
-        name: 'Recommended (Integrated Storybook)',
-        value: 'recommended'
       },
     ],
     default: 'base',
