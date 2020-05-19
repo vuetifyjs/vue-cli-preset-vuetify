@@ -1,3 +1,5 @@
+# DEPRECATED - USE [vuetifyjs/preset](https://github.com/vuetifyjs/preset) INSTEAD
+
 # vue-cli-preset-vuetify
 > A Vue CLI Preset for generating pre-scaffolded Vuetify applications
 
